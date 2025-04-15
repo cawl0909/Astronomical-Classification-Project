@@ -1,0 +1,1 @@
+#include "stellar_object.h"

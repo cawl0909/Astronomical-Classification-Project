@@ -3,7 +3,7 @@
 #include <iostream>
 #include <vector>
 
-#include "astronomical_object.h"
+#include "classes/astronomical_object.h"
 
 
 int main()
