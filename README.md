@@ -3,3 +3,6 @@ It currently supports various stellar objects, systems and galaxies.
 
 #  Compiling 
 This project can be compiled using:
+'''
+print(data);
+'''

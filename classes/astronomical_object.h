@@ -44,5 +44,8 @@ class AstronomicalObject
 
     void set_right_ascension(const double in_right_ascension) {right_ascension =  in_right_ascension;}
 
+    std::string return_formated_string();
+    void print_information();
+
 };
 
