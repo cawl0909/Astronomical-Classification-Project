@@ -5,7 +5,5 @@ It currently supports various stellar objects, systems and galaxies.
 This project can be compiled using:
 
 ```
-function test() {
-  console.log("notice the blank line before this function?");
-}
+g++ 
 ```
