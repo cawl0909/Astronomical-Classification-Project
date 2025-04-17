@@ -7,9 +7,11 @@
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
-                "${file}",
+                "${workspaceFolder}/classification.cpp",
+                "${workspaceFolder}/standard_tests/standard_input_validation.cpp",
+                "classes/astronomical_object.cpp",
                 "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+                "${workspaceFolder}/classifier.exe"
             ],
             "options": {
                 "cwd": "${fileDirname}"
