@@ -8,14 +8,21 @@
 
 
 // This class is the fundemental base class for all astronomical objects 
+// This contains the observational data corresponding to astronomical objects not their intrinsic qualities
+// like the mass etc.
 
+struct CatalougeIdentifierPair
+{
+    std::string survey_name;
+    std::string identifier;
+};
 
 class AstronomicalObject
 {
-    //This is for a point like object
     private:
-
     protected:
+
+    bool empty = true;
 
     std::string astro_obj_name;
 
@@ -25,12 +32,15 @@ class AstronomicalObject
     double declination;
     double declination_error;
 
+    double parallax;
+
     double distance;
     double distance_error;
 
     double apparent_magnitude;
+    double absolute_magnitude;
 
-    //decided to have magnitude as part of the base class since the vast majority of objects are detected by light
+    //decided to have magnitudes as part of the base class since the vast majority of objects are detected by light
     //except exoplanets via transits etc.
     //instead of complicating the the class structure by having a bunch of classes for luminous objects.
     //the memory impact is minute and trivial to remedy if ever that comes up (probably never)
@@ -47,18 +57,28 @@ class AstronomicalObject
     double get_declination_error() const {return declination_error;}
     double get_distance() const {return distance;}
     double get_distance_error() const {return distance_error;}
+    double get_apparent_magnitude() const {return apparent_magnitude;}
+    double get_absolute_magnitude() const {return absolute_magnitude;}
 
     std::string get_name() const {return astro_obj_name;}
 
-    void set_right_ascension(const double in_right_ascension) {right_ascension =  in_right_ascension;}
+    void set_right_ascension(const double in_right_ascension);
+    void set_right_ascension_error(const double in_right_ascension_error);
+    void set_declination(const double in_declination);
+    void set_declination_error(const double in_declination_error);
+    void set_distance(const double in_distance);
+    void set_distance_error(const double in_distance_error);
+    void set_apparent_magnitude(const double in_apparent_magnitude);
+    void set_absolute_magnitude(const double in_absolute_magnitude);
 
-    std::string return_formated_string();
+    std::string formated_storage_string();
+
     void print_information();
 };
 
 //This class is for objects that  are not treated as pointer sources i.e. galaxies.
 
-class AstronomicalObjectNonPoint : public AstronomicalObject
+class NonPointAstronomicalObject : public AstronomicalObject
 {
     private:
     protected:
@@ -74,7 +94,9 @@ class AstronomicalObjectNonPoint : public AstronomicalObject
     double get_apparent_size_major_axis_error() const {return apparent_size_major_axis_error;}
     double get_apparent_size_minor_axis() const {return apparent_size_minor_axis;}
     double get_apparent_size_minor_axis_error() const {return apparent_size_minor_axis_error;}
+
 };
+
 
 
 
