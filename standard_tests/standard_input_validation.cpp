@@ -1,17 +1,21 @@
+#include "standard_input_validation.h"
+
 #include<iostream>
 #include<string>
 #include<vector>
 
-#include "standard_input_validation.h"
 
-template <typename T>
-bool is_positive(double in_val)
-{
-    return false;
-}
 
-bool is_positive(int in_val)
+bool is_non_zero_length(std::string input)
 {
+    if(input.length() > 0)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
     return false;
 }
 
