@@ -13,7 +13,7 @@
 int main()
 {
     std::cout<<"Success"<<std::endl;
-    int t  = -1;
+    int t{-1};
     std::cout<<is_positive(t)<<std::endl;
     test();
     return 0;
