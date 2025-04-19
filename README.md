@@ -24,9 +24,11 @@ It currently supports the following objects:
 # Overview of the class structure 
 
 # CSV file formatting
+The csv file formats are listed into vertical name, type pairs.<br>
+? suffix corresponds to an optional data point<br>
+
 
 
 ## Fundemental abstract astronomical object
-|Name | string |
-|-----|--------|
+|Name | string | 
 |string|name|
