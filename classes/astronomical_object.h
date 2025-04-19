@@ -54,7 +54,9 @@ class AstronomicalObject
     AstronomicalObject(){}; //Default
     ~AstronomicalObject() = default; //Destructor
     AstronomicalObject(const std::string& in_name,const int& in_obs_id, const double& in_ra,const double& in_ra_err,
-    const double& in_dec,const double& in_dec_error);
+    const double& in_dec,const double& in_dec_error,const double& in_parallax,const double& in_prop_mot_ra,
+    const double& in_prop_mot_dec,const double& in_radial_velocity,const double& in_red_shift,const double& in_distance,
+    const double& in_distance_err,const double& in_apparent_mag,const std::string& in_notes);
 
     double get_right_ascension() const {return right_ascension;}
     double get_right_ascension_error() const {return right_ascension_error;}
@@ -63,9 +65,8 @@ class AstronomicalObject
     double get_distance() const {return distance;}
     double get_distance_error() const {return distance_error;}
     double get_apparent_magnitude() const {return apparent_magnitude;}
-//
-    //std::string get_name() const {return astro_obj_name;}
-//
+    const std::string& get_name() const {return astro_obj_name;}
+
     //void set_right_ascension(const double in_right_ascension);
     //void set_right_ascension_error(const double in_right_ascension_error);
     //void set_declination(const double in_declination);
