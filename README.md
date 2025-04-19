@@ -30,6 +30,6 @@ The csv file formats are listed into vertical name, type pairs.<br>
 
 
 ## Fundemental abstract astronomical object
-|type | Name |Right ascension|Declination|
-|-----|--------|----|----|
-|string|string|Double|Double|
+|type | Name |Right ascension|Declination|RA Err|Dec Err|Notes|
+|-----|--------|----|----|----|----|----|---------|
+|string|string|double|double|double|double|string|
