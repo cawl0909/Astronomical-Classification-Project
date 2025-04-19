@@ -1,7 +1,7 @@
 # Overviews
 This project is an astronomical classifier which can parse csv files and read to them into accessible classes. <br>
 It also supports command line data retreival and input aswell as outputting to a formatted .txt file <br>
-This was built in mind with compatability with [SIMBAD] (https://simbad.cds.unistra.fr/simbad/).
+This was built in mind with compatability with [SIMBAD](https://simbad.cds.unistra.fr/simbad/).
 
 #  Compiling 
 This project is built in mind with c++17 comptability and can be compiled using gcc:
