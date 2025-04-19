@@ -1,10 +1,10 @@
-# Overviews
-This project is an astronomical classifier which can parse csv files and read to them into accessible classes. <br>
+# Overview
+This project is a modular astronomical data catalouge which can parse formatted csv files and read to them into accessible classes. <br>
 It also supports command line data retreival and input aswell as outputting to a formatted .txt file <br>
 This was built in mind with compatability with [SIMBAD](https://simbad.cds.unistra.fr/simbad/).
 
 #  Compiling 
-This project is built in mind with c++17 comptability and can be compiled using gcc:
+This project is built in mind with c++17 comptability and can be compiled in windows using gcc:
 
 ```
 g++ -std
@@ -22,3 +22,11 @@ It currently supports the following objects:
 
 
 # Overview of the class structure 
+
+# CSV file formatting
+
+
+## Fundemental abstract astronomical object
+|Name | string |
+|-----|--------|
+|string|name|
