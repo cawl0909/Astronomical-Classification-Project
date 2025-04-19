@@ -25,7 +25,11 @@ It currently supports the following objects:
 
 # CSV file formatting
 The csv file formats are listed into vertical name, type pairs.<br>
-? suffix corresponds to an optional data point<br>
+They are read using the abstract class first then parsed using their specific parsers<br>
+If the current line type is unsupported it will skip over it however this can be changed to exit the file read by changing the
+skip_line flag in the file parser.<br>
+
+The ? suffix corresponds to an optional data point<br>
 
 
 
@@ -33,3 +37,11 @@ The csv file formats are listed into vertical name, type pairs.<br>
 |type | Name |Right ascension|Declination|RA Err|Dec Err|Notes|
 |-----|--------|----|----|----|----|----|
 |string|string|double|double|double|double|string|
+
+## Star class
+
+## Galaxy class
+
+## System Class
+
+## Orbit class
