@@ -9,7 +9,7 @@
                 "-g",
                 "${workspaceFolder}/main.cpp",
                 "${workspaceFolder}/standard_tests/standard_input_validation.cpp",
-                "classes/astronomical_object.cpp",
+                "${workspaceFolder}/classes/astronomical_object.cpp",
                 "-o",
                 "${workspaceFolder}/classifier.exe"
             ],
