@@ -3,6 +3,8 @@
 #include <string>
 #include <vector>
 #include <iostream>
+#include <memory>
+
 
 #include "../standard_tests/standard_input_validation.h"
 
@@ -20,30 +22,33 @@ struct CatalougeIdentifierPair
 class AstronomicalObject
 {
     private:
-    protected:
-
     bool empty = true;
+    protected:
 
     std::string astro_obj_name;
 
-    double right_ascension;
+    double right_ascension; //mili-arcseconds
     double right_ascension_error;
 
-    double declination;
+    double declination;//mili-arcseconds
     double declination_error;
 
-    double parallax;
+    double parallax;//mili-arcseconds
 
-    double distance;
+    double proper_motion_ra; //mili-arcseconds
+    double proper_motion_dec;
+
+    double radial_velcoity; //km^-s
+
+    double red_shift_z; //number
+
+    double distance; //lightyear
     double distance_error;
 
-    double apparent_magnitude;
+    double apparent_magnitude; //number
     double absolute_magnitude;
 
-    //decided to have magnitudes as part of the base class since the vast majority of objects are detected by light
-    //except exoplanets via transits etc.
-    //instead of complicating the the class structure by having a bunch of classes for luminous objects.
-    //the memory impact is minute and trivial to remedy if ever that comes up (probably never)
+    std::string notes{"Empty"};
 
     public:
 
