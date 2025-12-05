@@ -23,4 +23,4 @@ It currently supports the following objects:
 For an overview of the commands, compile and type h/help when the CLI opens for an overview of the commands
 
 # CSV file formatting
-Formatting information is inside the report
+Formatting information is inside the report aswell as the precise technical information and strucutre of the Class heirarchy inside a UML diagram [technical_report.pdf]
